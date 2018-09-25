@@ -1,0 +1,112 @@
+{
+  "_args": [
+    [
+      "@kubernetes/client-node@0.6.0",
+      "/home/administrator/Node/node-red-kubernetes/nodes"
+    ]
+  ],
+  "_from": "@kubernetes/client-node@0.6.0",
+  "_id": "@kubernetes/client-node@0.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-VcZ6euiMlniEq2n/wc0IkGooKVkh9maIyEBKjV1vE1TNbvMrT8Xp7Ir5f8tRP3hnQoxyoeccJZct5GJBSyoLIQ==",
+  "_location": "/@kubernetes/client-node",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@kubernetes/client-node@0.6.0",
+    "name": "@kubernetes/client-node",
+    "escapedName": "@kubernetes%2fclient-node",
+    "scope": "@kubernetes",
+    "rawSpec": "0.6.0",
+    "saveSpec": null,
+    "fetchSpec": "0.6.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@kubernetes/client-node/-/client-node-0.6.0.tgz",
+  "_spec": "0.6.0",
+  "_where": "/home/administrator/Node/node-red-kubernetes/nodes",
+  "author": {
+    "name": "Kubernetes Authors"
+  },
+  "bugs": {
+    "url": "https://github.com/kubernetes-client/javascript/issues"
+  },
+  "dependencies": {
+    "@types/base-64": "^0.1.2",
+    "@types/bluebird": "^3.5.7",
+    "@types/js-yaml": "^3.5.31",
+    "@types/node": "^8.0.2",
+    "@types/request": "^2.47.0",
+    "@types/underscore": "^1.8.1",
+    "@types/websocket": "0.0.38",
+    "base-64": "^0.1.0",
+    "bluebird": "^3.3.5",
+    "byline": "^5.0.0",
+    "js-yaml": "^3.5.2",
+    "jsonpath": "^1.0.0",
+    "request": "^2.72.0",
+    "shelljs": "^0.7.8 ",
+    "underscore": "^1.8.3",
+    "websocket": "^1.0.25"
+  },
+  "description": "NodeJS client for kubernetes",
+  "devDependencies": {
+    "@types/chai": "^4.0.1",
+    "@types/mocha": "^2.2.41",
+    "chai": "^4.0.2",
+    "jasmine": "^2.8.0",
+    "mocha": "^5.2.0",
+    "mock-fs": "^4.6.0",
+    "nyc": "^12.0.2",
+    "source-map-support": "^0.5.9",
+    "ts-node": "^3.1.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.6.2"
+  },
+  "files": [
+    "dist/*.ts",
+    "dist/*.js",
+    "README.md"
+  ],
+  "homepage": "https://github.com/kubernetes-client/javascript#readme",
+  "keywords": [
+    "kubernetes",
+    "client"
+  ],
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "name": "@kubernetes/client-node",
+  "nyc": {
+    "include": [
+      "src/**/*.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "reporter": [
+      "text",
+      "lcov",
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "all": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kubernetes-client-javascript.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -Rf node_modules/ dist/",
+    "lint": "tslint --project \".\"",
+    "test": "nyc mocha",
+    "watch": "tsc --watch"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.6.0"
+}
