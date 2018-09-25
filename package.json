@@ -98,7 +98,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kubernetes-client-javascript.git"
+    "url": "git+https://github.com/scher200/kubernetes-client-javascript.git"
   },
   "scripts": {
     "build": "tsc",
